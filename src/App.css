@@ -1,44 +1,164 @@
-main {
-  align-content: center;
-  box-sizing: border-box;
-  display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  hyphens: auto;
-  line-height: 1.65;
+body {
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+  max-width: 728px;
   margin: 0 auto;
-  max-width: 680px;
+}
+
+.App header {
+  background-color: #181717;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.login-header {
+  font-size: x-large;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
-  padding: 72px 0;
+  background-color: rgb(40, 37, 53);
+  background-color: rgb(17 4 70);
+  gap: 10px;
+}
+
+main {
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
   text-align: center;
 }
-h1 {
-  font-size: 45px;
+
+.text-input-field {
+  color: white;
+  padding: 10px;
 }
-h2 {
-  margin-top: 1.5em;
+
+.message {
+  display: flex;
+  align-items: center;
+  margin: 13px;
 }
-p {
-  font-size: 16px;
+
+
+.sent {
+  flex-direction: row-reverse;
 }
-a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
+
+.sent p {
+  color: white;
+  background: teal;
+  align-self: flex-end;
 }
-a:hover {
-  border-bottom: 1px solid #0076ff;
+.received p {
+  background: #e5e5ea;
+  color: black;
 }
-code,
-pre {
-  color: #d400ff;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 0.92em;
-}
-code:before,
-code:after {
-  content: '\`';
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
 }
