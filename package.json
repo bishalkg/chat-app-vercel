@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.10",
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "firebase": "^9.2.0",
+    "framer-motion": "^4",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-firebase-hooks": "^4.0.0",
